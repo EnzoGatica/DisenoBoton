@@ -8,36 +8,67 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn4"
-        android:layout_width="200dp"
+        android:id="@+id/btn5"
+        android:layout_width="183dp"
         android:layout_height="70dp"
-        android:backgroundTint="#D32C2C"
-        android:drawableLeft="@drawable/baseline_published_with_changes_24"
-        android:drawableTint="#ECECEC"
-        android:text="Updating profile"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#513B3B"
+        android:text="Unlocked level 5"
+        android:textColor="#2BC1BC"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btn6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="199dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#579E2B"
+        android:drawableLeft="@drawable/baseline_queue_music_24"
+        android:drawableTint="#FFFFFF"
+        android:text="Music paused"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="183dp"
         android:layout_height="70dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="#D3ACAC"
         android:text="Picture saved to gallery"
         android:textColor="#E16464"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintEnd_toStartOf="@+id/btn5"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="187dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#D32C2C"
+        android:drawableLeft="@drawable/baseline_published_with_changes_24"
+        android:drawableTint="#ECECEC"
+        android:text="Updating profile"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
 
     <Button
         android:id="@+id/btn3"
         android:layout_width="183dp"
         android:layout_height="70dp"
+        android:layout_marginBottom="128dp"
         android:backgroundTint="#149DD3"
         android:drawableLeft="@drawable/baseline_star_24"
         android:drawableRight="@drawable/baseline_star_24"
@@ -46,108 +77,36 @@
         android:textStyle="bold"
         app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <Button
-        android:id="@+id/btn5"
-        android:layout_width="183dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#513B3B"
-        android:text="Unlocked level 5"
-        android:textColor="#2BC1BC"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
-
-    <Button
-        android:id="@+id/btn6"
-        android:layout_width="183dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#579E2B"
-        android:drawableLeft="@drawable/baseline_queue_music_24"
-        android:drawableTint="#FFFFFF"
-        android:text="Music paused"
-        android:textStyle="bold"
-        app:cornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="177dp"
-        android:layout_height="185dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_contacts_24" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="140dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="493dp" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left"
-        app:constraint_referenced_ids="guideline3" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="244dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="131dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btn6"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="201dp"
         android:layout_height="76dp"
+        android:layout_marginStart="4dp"
         android:backgroundTint="#944CD3"
         android:drawableLeft="@drawable/baseline_flight_24"
+        android:drawableTint="#FFFFFF"
         android:text="Turn off flight mode"
         android:textColorHighlight="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
+        app:srcCompat="@drawable/baseline_contacts_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
